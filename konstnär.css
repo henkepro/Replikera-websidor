@@ -1,0 +1,85 @@
+.div1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: flex-start; /* Aligns the items to the start of the container */
+    width: 100%; /* Ensures div1 takes the full width of its parent */
+}
+
+/* Remove the default blue color and underline */
+.div1 a {
+    color: inherit;         /* Inherit the color from parent, or set any color you prefer */
+    text-decoration: none;  /* Remove underline */
+}
+
+/* Apply styles when the link is hovered */
+.div1 a:hover {
+    color: blue;            /* Set the color to blue when hovered */
+}
+
+
+.div2 {
+    display: flex;
+    gap: 20px;                  /* Space between the images */
+    justify-content: flex-start; /* Align images from the start */
+    width: 100%;
+}
+
+.div2 div {
+    display: flex;
+    gap: 20px; /* Space between the images inside each container */
+    flex-wrap: wrap; /* Allow wrapping of images inside each div */
+}
+
+.div2 img {
+    width: 300px;           /* Each image takes 30% of the container width */
+    height: auto;         /* Keep aspect ratio */
+    margin: 10px;            /* Remove any unnecessary margin */
+}
+
+
+
+#Row1 {
+    display: flex;                /* Makes #Row1 a flex container */
+    flex-direction: row;          /* Arranges the child elements in a row */
+    justify-content: flex-end;    /* Aligns items to the right */
+    gap: 20px;                    /* Adds space between elements */
+    align-items: center;          /* Vertically centers items */
+    width: 100%;                  /* Makes sure Row1 spans the full width of the container */
+}
+
+/* Style for the dropdown link */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownlist {
+    cursor: pointer;  /* Show pointer on hover */
+}
+
+/* The actual dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hidden initially */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;  /* Adjust width of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown when the user hovers over the dropdown link */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
