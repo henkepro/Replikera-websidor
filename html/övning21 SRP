@@ -1,0 +1,23 @@
+public class OrderProcessor
+{
+    public void ProcessOrder(string order)
+    {
+    Console.WriteLine($"Processing order: {order}");
+    }
+}
+
+public class DatabaseProcessor
+{
+    public void SaveOrderToDatabase(string order)
+    {
+    Console.WriteLine($"Saving order to database...");
+    }
+}
+
+public class EmailProcessor
+{
+    public void SendOrderConfirmationEmail(string email)
+    {
+    Console.WriteLine($"Sending conf-email to {email}");
+    }
+}
