@@ -21,3 +21,50 @@ public class EmailProcessor
     Console.WriteLine($"Sending conf-email to {email}");
     }
 }
+
+/*
+
+GET /tasks
+- Description: Fetches all tasks.
+- Response:
+  - 200 OK: Returns a list of all tasks.
+  - Example Response:
+    [
+      { "id": 1, "title": "Task 1", "description": "Description of task 1" },
+      { "id": 2, "title": "Task 2", "description": "Description of task 2" }
+    ]
+  
+GET /tasks/{id}
+- Description: Fetches a specific task by ID.
+- URL Parameters:
+  - id: The unique identifier of the task.
+- Response:
+  - 200 OK: Returns the task with the specified ID.
+  - Example Response:
+    { "id": 1, "title": "Task 1", "description": "Description of task 1" }
+  - 404 Not Found: If the task with the given ID does not exist.
+  
+PUT /tasks/{id}
+- Description: Updates an existing task.
+- URL Parameters:
+  - id: The unique identifier of the task to update.
+- Body Parameters (JSON):
+  - title: The updated title of the task.
+  - description: The updated description of the task.
+- Response:
+  - 200 OK: Returns the updated task.
+  - Example Response:
+    { "id": 1, "title": "Updated Task Title", "description": "Updated task description" }
+  - 400 Bad Request: If the request body is invalid.
+
+DELETE /tasks/{id}
+- Description: Deletes a specific task by ID.
+- URL Parameters:
+  - id: The unique identifier of the task to delete.
+- Response:
+  - 200 OK: Returns a success message.
+  - Example Response:
+    { "message": "Task with ID 1 has been deleted." }
+  - 404 Not Found: If the task with the given ID does not exist.
+
+*/
